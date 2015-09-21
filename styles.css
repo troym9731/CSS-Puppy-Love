@@ -1,0 +1,268 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+html {
+  box-sizing: border-box;
+  font: 12pt 'Open Sans', Arial;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  color: inherit;
+  font: inherit;
+}
+
+/****************************************
+  Defaults
+*****************************************/
+
+/****************************************
+  Helpers
+*****************************************/
+
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content-box {
+  background-color: white;
+  box-shadow: 0 0 12px -4px black;
+}
+
+/****************************************
+  Layout
+*****************************************/
+
+div.hero {
+  background: radial-gradient(rgba(0, 129, 155, 0.4), rgba(0, 129, 155, 1)), url(Images/bg.jpg);
+  background-size: cover;
+}
+
+div.primary-content {
+  background-color: #D1DDE4;
+}
+
+.panel > div {
+  width: 960px;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+}
+
+/** Header **/
+
+.primary-header {
+  position: relative;
+  min-height: 150px;
+}
+
+.logo {
+  font: 38pt Lobster;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+form.primary-search {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+form.primary-search input {
+  background-color: transparent;
+  color: #6CB9C7;
+  outline: 0;
+  border: 1px solid #6CB9C7;
+}
+
+form.primary-search ::-webkit-input-placeholder {
+  color: #6CB9C7;
+}
+
+.primary-nav {
+  min-height: 50px;
+  text-align: center;
+  border-top: 1px solid #7BC0C4;
+  border-bottom: 1px solid #7BC0C4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.primary-nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+/** End Header **/
+
+/** Section with Info-Boxes **/
+
+.primary-info {
+  background-color: #D1DDE4;
+  text-align: center;
+}
+
+.primary-info > * + * {
+  margin-left: 15px;
+}
+
+/** End Info-Boxes **/
+
+/** Aside **/
+
+.puppy-aside {
+  background-color: white;
+  float: left;
+  width: 400px;
+  padding: 10px;
+}
+
+.puppy-aside > * + * {
+  margin-top: 10px;
+}
+
+/** End Aside **/
+
+section.primary-section {
+  margin-left: 400px;
+}
+
+/****************************************
+  Components
+*****************************************/
+
+.banner {
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+
+.banner h2 {
+  font-size: 28pt;
+}
+
+/** Info-Boxes **/
+
+.info-box {
+  display: inline-block;
+  transform: translateY(-25px);
+  min-height: 150px;
+  width: 300px;
+  padding: 10px 0px;
+}
+
+.info-box.help {
+  border-top: 4px solid #E51C00;
+}
+
+.info-box.food {
+  border-top: 4px solid #65BE00;
+}
+
+.info-box.sell {
+  border-top: 4px solid #006BC5;
+}
+
+.info-box h4 {
+  font-weight: bold;
+  margin: 3px 0 0 0;
+}
+
+/** End Info-Box Section **/
+
+/** Media Objects within Aside **/
+
+.puppy-object {
+  background-color: #E4F1F9;
+}
+
+.puppy-object > img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.puppy-object > .puppy-description {
+  margin-left: 110px;
+}
+
+.puppy-description p {
+  margin: 3px 0 0 0;
+}
+
+.puppy-description h4 {
+  color: #0085D0;
+  font-size: 14pt;
+  margin: 0;
+}
+
+/** End Media Objects **/
+
+/** Tiles Section **/
+
+.puppy-tiles p, .puppy-tiles h4 {
+  margin: 0;
+}
+
+.puppy-tiles img {
+  display: block;
+  height: 150px;
+  width: 150px;
+}
+
+.puppy-tiles div {
+  display: inline-block;
+  width: 150px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.puppy-tiles h4 {
+  background-color: #81CA2D;
+  color: #305100;
+  padding: 2px;
+}
+
+.puppy-tiles p {
+  background-color: #DFEDCF;
+  color: #224A0C;
+}
+
+/** End Tiles Section **/
+
+button {
+  color: #006BC5;
+  background-color: white;
+  border: 2px solid #006BC5;
+  border-radius: 4px;
+}
+
+button.warning {
+  color: #E51C00;
+  border-color: #E51C00;
+}
+
+button.success {
+  color: #65BE00;
+  border-color: #65BE00;
+}
+
+button.search {
+  color: white;
+  background-color: #E9501A;
+  border: none;
+  height: 26px;
+}
